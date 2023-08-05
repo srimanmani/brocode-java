@@ -1,14 +1,11 @@
+import javax.swing.JOptionPane;
 public class variable
 {
     public static void main(String[] args){
-        String x="water";
-        String y="acid";
-        String temp;
+        String name=JOptionPane.showInputDialog("enter your name");
+        JOptionPane.showMessageDialog(null,"hello"+name);
 
-        temp=x;
-        x=y;
-        y=temp;
-        System.out.println("x:" +x);
-        System.out.println("y:" +y);
+
     }
+
 }
